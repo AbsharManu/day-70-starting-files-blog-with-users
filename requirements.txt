@@ -8,3 +8,5 @@ Werkzeug>=3.0.0  #<-- Remove this line (or set it to >=3.0.0 if you prefer)
 Flask>=3.0.0       # <-- Change this to Flask 3.x or higher
 flask_sqlalchemy==3.1.1
 SQLAlchemy==2.0.25
+gunicorn==23.0.0
+psycopg2-binary==2.9.9
