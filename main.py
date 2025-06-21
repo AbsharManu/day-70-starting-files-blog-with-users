@@ -6,7 +6,7 @@ from functools import wraps
 import hashlib
 import werkzeug
 from flask import Flask, abort, render_template, redirect, url_for, flash, request
-from bootstrap_flask import Bootstrap5
+from flask_bootstrap import Bootstrap5
 from flask_ckeditor import CKEditor
 from flask_login import UserMixin, login_user, LoginManager, current_user, logout_user, login_required
 from flask_sqlalchemy import SQLAlchemy
