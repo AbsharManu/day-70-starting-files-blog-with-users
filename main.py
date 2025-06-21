@@ -1,12 +1,12 @@
 from datetime import date
 import os
+from ensurepip import bootstrap
 from typing import List
 from functools import wraps
 import hashlib
-
 import werkzeug
 from flask import Flask, abort, render_template, redirect, url_for, flash, request
-from flask_bootstrap import Bootstrap
+from bootstrap_flask import Bootstrap5
 from flask_ckeditor import CKEditor
 from flask_login import UserMixin, login_user, LoginManager, current_user, logout_user, login_required
 from flask_sqlalchemy import SQLAlchemy
@@ -34,7 +34,7 @@ This will install the packages from the requirements.txt for this project.
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 ckeditor = CKEditor(app)
-Bootstrap(app)
+bootstrap = Bootstrap5(app)
 
 # gravatar = Gravatar(
 #     app,
